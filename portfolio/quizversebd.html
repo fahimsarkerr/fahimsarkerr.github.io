@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuizVerse BD</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Pixelify Sans', sans-serif;
+      background-color: #111;
+      color: #fff;
+      scrollbar-width: thin;
+      scrollbar-color: #FFCB05 #1a1818;
+    }
+
+    body::-webkit-scrollbar {
+      display: none; /* Chrome, Safari */
+    }
+    
+    /*--------------------------------------------------------------
+    # Scrollbar Style
+    --------------------------------------------------------------*/
+    /* Entire scrollbar */
+    ::-webkit-scrollbar {
+      width: 15px;
+      height: 10px;
+    }
+    
+    /* Track (background) */
+    ::-webkit-scrollbar-track {
+      background: #1a1818;  /* Dark background */
+      border-radius: 10px;
+    }
+    
+    /* Handle (scroll bar thumb) */
+    ::-webkit-scrollbar-thumb {
+      background: #FFCB05;  /* Yellow thumb */
+      border-radius: 10px;
+      border: 2px solid #1a1818;
+    }
+    
+    /* On hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e0b800;
+    }
+
+    .project-container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .project-title {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #FFCB05;
+    }
+
+    .project-type {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #aaa;
+    }
+
+    .project-images img {
+      width: calc(50% - 10px);
+      border-radius: 10px;
+    }
+
+    .project-description {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .project-video {
+      margin-top: 20px;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    .project-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .project-images {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      overflow-x: auto;
+      padding: 10px 0;
+      margin: 10px;
+      scroll-behavior: smooth;
+    }
+    
+    .project-images img {
+      flex: 0 0 auto; /* Prevent shrinking */
+      width: 25%;
+      border-radius: 12px;
+      border: 2px solid #FFCB05;
+      box-shadow: 0 0 20px rgba(255, 203, 5, 0.3);
+      transition: transform 0.3s ease;
+    }
+    
+    .project-images img:hover {
+      color: aqua;
+    }
+    
+    /* Optional scrollbar styling */
+    .project-images::-webkit-scrollbar {
+      height: 8px;
+    }
+    
+    .project-images::-webkit-scrollbar-thumb {
+      background-color: #FFCB05;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .project-images img {
+        width: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="project-container">
+    <h1 class="project-title">QuizVerse BD - Quiz App</h1>
+    <div class="project-type">Native Application - Educational App</div>
+
+    <div class="project-images">
+      <img src="img/quizversebd/quizverse1.png" alt="Screenshot 1" />
+      <img src="img/quizversebd/quizverse2.png" alt="Screenshot 2" />
+      <img src="img/quizversebd/quizverse3.png" alt="Screenshot 3" />
+      <img src="img/quizversebd/quizverse4.png" alt="Screenshot 4" />
+      <img src="img/quizversebd/quizverse5.png" alt="Screenshot 5" />
+      <img src="img/quizversebd/quizverse6.png" alt="Screenshot 6" />
+    </div>
+
+    <div class="project-description">
+      <p>
+        This is a native Android Task Manager app built to help users organize and prioritize their daily tasks. The app features a user-friendly interface, notification reminders, theme customization, and offline support.
+      </p>
+      <p>
+        It uses SQLite for local data storage, Android Jetpack components for architecture, and Material Design principles for the UI.
+      </p>
+    </div>
+
+    <div class="project-video">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
